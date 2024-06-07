@@ -1,0 +1,91 @@
+
+
+/* code for middle content*/
+.scroll-container {
+  overflow-y: auto;
+  height: 100%;
+}
+
+.Phone-side
+{
+  display: none;
+}
+
+.side-bar {
+
+  position: sticky;
+  top: 0;
+  width:20%;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+
+@media (max-width: 860px)
+{
+
+  .side-bar {
+   display: none;
+  }
+  .Cloth {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .card-body {
+    padding: 10px;
+  }
+
+ 
+
+    .container
+    {
+    width: 550px;
+      height: 550px;
+    }
+    
+  
+
+  .btn {
+    margin-right: 3px;
+  }
+}
+
+@media (max-width: 576px)
+ {
+  .Phone-side
+  {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+  }
+ .big-screen,.side-bar
+   {
+     display: none;
+   }
+
+
+    .container
+    {
+    width: 150px;
+      height: 150px;
+    }
+    
+  
+   .image
+   {
+    display: block;
+     width: 100px;
+     height: 100px;
+   }
+   .manage
+   {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   }
+
+}
+

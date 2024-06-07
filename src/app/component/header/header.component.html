@@ -1,0 +1,88 @@
+<nav class="navbar navbar-default navbar-fixed-bottom px-5 p-3 bg-white fixed-top h-20" >
+  <div class="container">
+      <div class = "home">
+           <div class="tooltips home-tip">
+            <span class="material-symbols-outlined active" (click)="goHome()">
+              house
+              </span>
+               <span class="tooltips-text"> Home </span>
+          </div>
+        <a href=""> About</a>
+      </div>
+      <div class="searchBar">
+      <input type="text" placeholder="Search" class = " Search">
+      <span class="material-symbols-outlined " id="search">
+        search
+        </span>
+      </div>
+      <div class=" phone">
+        <div class="shop ">
+          <div class="tooltips hide " >
+            <span class="material-symbols-outlined outlined active" (click)="goHome()">
+              house
+              </span>
+               <span class="tooltips-text"> Home </span>
+          </div>
+                <div class="tooltips">
+                  <span class="material-symbols-outlined outlined active">
+                    shopping_cart
+                    </span>
+                     <span class="tooltips-text"> Cart </span>
+                </div>
+                <div class="tooltips">
+                    <span class="material-symbols-outlined outlined active">
+                      local_mall
+                      </span>
+                       <span class="tooltips-text"> Bag </span>
+                </div>
+                <div class="tooltips">
+                  <span class="material-symbols-outlined outlined active">
+                    favorite
+                    </span>
+                     <span class="tooltips-text"> Favorite </span>
+                </div>
+
+                <div class="tooltips">
+                  <span class="material-symbols-outlined outlined active">
+                    account_circle
+                    </span>
+                    <span class="tooltips-text"> Account</span>
+                </div>
+        </div>
+      </div>
+  </div>
+</nav>
+<div class="section mt-5 pt-5">
+  <div class="catag">
+    <span class="specific" (click)="goToWomen()">Women</span>
+    <span class="specific" (click)="goTomen()">Men</span>
+    <span class="specific" (click)="goTokid()">Kid</span>
+  </div>
+  <div class="scrol justifiy-content-center">
+    <div class="arrow left-arrow" (click)="scrollleft()">
+      <span class="material-symbols-outlined"> keyboard_arrow_left </span>
+    </div>
+    <div class="Clothes-list" #scrollableContent>
+      <span class="badge rounded-pill bg-dark m-1 p-2 clothes">T-Shirt</span>
+      <span class="badge rounded-pill bg-dark m-1 p-2 clothes">Short</span>
+      <span class="badge rounded-pill bg-dark m-1 p-2 clothes">Trouser</span>
+      <span class="badge rounded-pill bg-dark m-1 p-2 clothes">Jackets</span>
+      <span class="badge rounded-pill bg-dark m-1 p-2 clothes">Dresses</span>
+      <span class="badge rounded-pill bg-dark m-1 p-2 clothes">Sweaters</span>
+      <span class="badge rounded-pill bg-dark m-1 p-2 clothes">Jeans</span>
+      <span class="badge rounded-pill bg-dark m-1 p-2 clothes">Capris</span>
+      <span class="badge rounded-pill bg-dark m-1 p-2 clothes">Romper</span>
+      <span class="badge rounded-pill bg-dark m-1 p-2 clothes">Vests</span>
+      <span class="badge rounded-pill bg-dark m-1 p-2 clothes">Underwear</span>
+      <span class="badge rounded-pill bg-dark m-1 p-2 clothes"
+        >Athletic Short</span
+      >
+      <span class="badge rounded-pill bg-dark m-1 p-2 clothes">Joggers</span>
+      <span class="badge rounded-pill bg-dark m-1 p-2 clothes">Sneakers</span>
+      <span class="badge rounded-pill bg-dark m-1 p-2 clothes">Gloves</span>
+    </div>
+    <div class="arrow right-arrow" (click)="scrollright()">
+      <span class="material-symbols-outlined"> keyboard_arrow_right </span>
+    </div>
+  </div>
+</div>

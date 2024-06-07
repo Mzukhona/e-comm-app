@@ -1,0 +1,19 @@
+<div class="section">
+  <div class="big-screen container" >
+    <div class="row">
+      <div class="col-md-4 mt-3 Cloth" *ngFor="let item of items">
+        <div class="card" >
+          <img
+            [src]="item.image"
+            class="card-img-top"
+            alt="... "
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{ item.title }}</h5>
+            <p class="card-text">{{ item.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

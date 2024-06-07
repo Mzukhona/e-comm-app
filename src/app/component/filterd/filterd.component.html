@@ -1,0 +1,31 @@
+
+<div class="big-screen container" >
+  <div class="row">
+    <ng-container *ngFor="let item of pageItems ">
+      <div class="col-md-4 mt-3 cloth">
+        <div class="card" >
+          <img
+            [src]="item.image"
+            class="card-img-top"
+            alt="... "
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{ item.title }}</h5>
+            <p class="card-text">{{ item.description }}</p>
+
+        </div>
+      </div>
+</div>
+    </ng-container>
+
+</div>
+
+<div class="pagination pt-5">
+<button
+  *ngFor="let page of [].constructor(totalPages()); let i = index"
+  [class.active]="i + 1 === presentPage"
+  (click)="changePage(i + 1)">
+  {{ i + 1 }}
+</button>
+</div>
+</div>
